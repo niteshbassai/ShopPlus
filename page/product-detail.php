@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopPlus - Product Detail</title>
-    <link rel="stylesheet" href="../style.css"> <!-- Direct link to the CSS file -->
+    <link rel="stylesheet" href="/ShopPlus/style.css"> <!-- Corrected link to the CSS file -->
 </head>
 <body>
 
@@ -68,7 +68,7 @@ if ($product_id > 0 && isset($products[$product_id])) {
     <section class="product-detail-section">
         <h1><?php echo $product['name']; ?></h1>
         <div class="product-detail">
-            <img src="assets/image/<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>">
+            <img src="/ShopPlus/assets/image/<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>"> <!-- Updated path for images -->
             <div class="product-info">
                 <p><strong>Price:</strong> <?php echo $product['price']; ?></p>
                 <p><strong>Description:</strong> <?php echo $product['description']; ?></p>
